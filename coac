@@ -1,0 +1,19 @@
+export const mockTeachers: Teacher[] = [
+  { id: '1', name: 'Mohamad dzaky syarof', nip: '196801011990031001', subject: 'Matematika' },
+  { id: '2', name: 'Harko wikan jatmiko', nip: '197205121995122001', subject: 'Bahasa Indonesia' },
+  { id: '3', name: 'Deva nasirotun finga', nip: '198003151999031002', subject: 'Fisika' },
+  { id: '4', name: 'Eka milawati', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+   { id: '5', name: 'Tri mujianah', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+    { id: '6', name: 'Rina wening rahayu', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+     { id: '7', name: 'Evi winarni', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+      { id: '8', name: 'Herlina', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+       { id: '9', name: 'Yulita wijayanti', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+        { id: '10', name: 'Erfanovago M F', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+         { id: '11', name: 'Eko Aris Setiawan ', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+          { id: '12', name: 'Nurohmani asyaifulloh', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+           { id: '13', name: 'Yeni anjarwati', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+            { id: '14', name: 'Yeni yukarnain', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+             { id: '15', name: 'Umi farida purwaningsih', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+             { id: '16', name: 'Ani lu lujannah ', nip: '198507232008012003', subject: 'Bahasa Inggris' },
+             
+];
