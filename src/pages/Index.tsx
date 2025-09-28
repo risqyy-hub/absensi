@@ -17,14 +17,14 @@ const Index = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    
+
     // Simulate login
     setTimeout(() => {
       if (username === "admin" && password === "admin123") {
         const user = {
           username: "admin",
           name: "Administrator",
-          role: "admin" as const
+          role: "admin" as const,
         };
         localStorage.setItem("currentUser", JSON.stringify(user));
         toast.success("Login berhasil! Selamat datang di sistem absensi.");
@@ -37,19 +37,19 @@ const Index = () => {
   };
 
   return (
-    <div 
-      className="min-h-screen flex items-center justify-center relative"
+    <div
+      className="min-h-screen flex items-center justify-center relative px-4"
       style={{
         backgroundImage: `url(${schoolBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       {/* Blur overlay */}
       <div className="absolute inset-0 backdrop-blur-sm bg-black/30" />
-      
+
       {/* Login card */}
-      <Card className="w-full max-w-md mx-4 relative z-10 shadow-2xl">
+      <Card className="w-full max-w-md relative z-10 shadow-2xl bg-white/90 dark:bg-zinc-900/90">
         <CardHeader className="text-center space-y-4">
           <div className="mx-auto w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
             <img src={schoolLogo} alt="Logo Sekolah" className="w-12 h-12" />
@@ -61,7 +61,7 @@ const Index = () => {
             </CardDescription>
           </div>
         </CardHeader>
-        
+
         <CardContent>
           <form onSubmit={handleLogin} className="space-y-4">
             <div className="space-y-2">
@@ -75,7 +75,7 @@ const Index = () => {
                 required
               />
             </div>
-            
+
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
               <Input
@@ -87,18 +87,17 @@ const Index = () => {
                 required
               />
             </div>
-            
-            <Button
-              type="submit"
-              className="w-full mt-6"
-              disabled={loading}
-            >
+
+            <Button type="submit" className="w-full mt-6" disabled={loading}>
               {loading ? "Memproses..." : "Login"}
             </Button>
           </form>
-          
+
           <div className="mt-4 text-center text-sm text-muted-foreground">
-            <p>Demo: username: <strong>admin</strong>, password: <strong>admin123</strong></p>
+            <p>
+              Demo: username: <strong>admin</strong>, password:{" "}
+              <strong>admin123</strong>
+            </p>
           </div>
         </CardContent>
       </Card>
